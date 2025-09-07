@@ -1,0 +1,12 @@
+Install GHCup: Open your terminal and run curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+
+Add to PATH: After installation, add GHCup to your PATH by running export PATH="$HOME/.ghcup/bin:$PATH". To make this permanent, add the same line to your ~/.bashrc file and run source ~/.bashrc.
+
+Install VS Code Extension: In VS Code, go to Extensions (Ctrl+Ctrl+X), search for "Haskell" (from Haskell), and install it.
+
+Configure Code Runner: If you use the Code Runner extension, go to Settings (Ctrl+,), search for code-runner.runInTerminal, and check
+the box to enable it for interactive input.
+
+"undefined reference" error (-lgmp): Install the math library with sudo dnf install gmp-devel.
+
+"command not found" error (ghc or runghc): Ensure ~/.ghcup/bin is in your PATH by running export PATH="$HOME/.ghcup/bin:$PATH".
